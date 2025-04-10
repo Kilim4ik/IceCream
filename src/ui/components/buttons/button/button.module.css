@@ -1,0 +1,46 @@
+.button {
+  border-radius: 10px;
+  padding: 12px 36px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.primary {
+  composes: button;
+  background-color: #f8d24e;
+}
+.primary:hover {
+  background-color: #0a8817;
+}
+.primary:focus,
+.primary:active {
+  background-color: #0a8817;
+  color: white;
+}
+.primary:focus svg,
+.primary:active svg,
+.outline:focus svg,
+.outline:active svg {
+  fill: white;
+}
+.arrow {
+  margin-left: 8px;
+  transition: 0.5s;
+}
+.outline {
+  composes: button;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+}
+.outline:hover {
+  border: 2px solid #0a8817;
+}
+.outline:focus,
+.outline:active {
+  border: 2px solid #0a8817;
+  color: white;
+}
