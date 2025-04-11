@@ -1,0 +1,21 @@
+.productsSection {
+  padding: 58px 0 61px;
+  background-color: var(--fon-color);
+  background-size: 100%;
+  background-image: url(../../../../public/images/products/ice-creamsBG.png);
+}
+
+.productsContainer {
+  margin-top: 302px;
+  display: flex;
+  gap: 29px;
+}
+.cardTitle {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.img {
+  position: relative;
+  z-index: 1;
+}

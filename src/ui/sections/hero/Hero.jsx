@@ -51,7 +51,14 @@ export default function Hero() {
             treat your taste buds to an <br /> unforgettable experience!
           </p>
 
-          <img src="./images/hero/arrow.svg" alt="" />
+          <svg width={41} height={16} aria-label="arrow">
+            <use
+              style={{
+                fill: "white",
+              }}
+              href="/icons/sprite.svg#full-arrow"
+            />
+          </svg>
         </div>
         <ul className={styles.quantityList}>
           <li>
