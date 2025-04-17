@@ -1,13 +1,12 @@
+import Title from "../../components/title/Title";
 import Product from "./Product";
 import styles from "./Products.module.css";
 export default function Products({ products }) {
   return (
-    <section className={styles.productsSection}>
+    <section id="products" className={styles.productsSection}>
       <div className={`container ${styles.productsSectionContainer}`}>
-        <h2>
-          <span>100% natural</span>
-          products
-        </h2>
+        <Title subTitle="100% natural" title="products" />
+
         <div className={styles.productsContainer}>
           <Product
             colors={{

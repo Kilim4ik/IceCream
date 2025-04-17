@@ -1,8 +1,16 @@
 .heroSection {
   padding: 45px 0 332px;
   background-image: url(../../../../public/images/hero/dotesBG.svg),
-    url(../../../../public/images/hero/ice-creams.png),
-    url(../../../../public/images/hero/bigIceCream.png);
+    image-set(
+      url("../../../../public/images/hero/ice-creams.png") 1x,
+      url("../../../../public/images/hero/ice-creams-@2x.png") 2x,
+      url("../../../../public/images/hero/ice-creams-@3x.png") 3x
+    ),
+    image-set(
+      url("../../../../public/images/hero/bigIceCream.png") 1x,
+      url("../../../../public/images/hero/bigIceCream-@2x.png") 2x,
+      url("../../../../public/images/hero/bigIceCream-@3x.png") 3x
+    );
   background-repeat: no-repeat;
   background-size: 1200px auto, 225px 225px, 456px 560px;
   background-position: bottom 0 left calc(50% + 8px),

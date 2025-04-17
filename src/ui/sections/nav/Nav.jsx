@@ -8,10 +8,10 @@ export default function Nav() {
           <a href="/home">Home</a>
         </li>
         <li className={styles.navItem}>
-          <a href="/how-it’s-made">How it’s made?</a>
+          <a href="#how-it’s-made">How it’s made?</a>
         </li>
         <li className={styles.navItem}>
-          <a href="/products">Our products</a>
+          <a href="#products">Our products</a>
         </li>
         <li className={styles.navItem}>
           <a href="/contact">Contact</a>
