@@ -28,8 +28,8 @@ export default function HiimList() {
                 borderRadius: "50%",
                 backgroundColor: "#f8d24e",
               }}
-              width={36}
-              height={36}
+              width={50}
+              height={50}
               aria-label={id}
             >
               <use href={`/icons/sprite.svg#${id}`} />

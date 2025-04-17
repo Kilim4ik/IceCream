@@ -1,0 +1,18 @@
+.form {
+  margin-top: 40px;
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+  input,
+  textarea {
+    width: 100%;
+    outline-color: #f8d24e;
+    padding: 11px 16px;
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    background: rgba(248, 210, 78, 0.1);
+  }
+  button {
+    margin-top: 16px;
+  }
+}
