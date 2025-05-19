@@ -4,10 +4,10 @@ import Title from "../../components/title/Title";
 import HiimList from "./HiimList";
 import styles from "./HowItIsMade.module.css";
 import modalStyles from "./HiimModal.module.css";
-import Modal from "../../components/modal/Modal";
+// import Modal from "../../components/modal/Modal";
 
 export default function HowItIsMade() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
@@ -56,21 +56,13 @@ export default function HowItIsMade() {
                   This is enough to choose ice cream and coffee for any mood!
                 </p>
               </div>
-              <Button
-                arrow={true}
-                onClick={() => {
-                  setIsModalOpen(true);
-                  console.log(isModalOpen);
-                }}
-              >
-                Read more
-              </Button>
+              <Button arrow={true}>Read more</Button>
             </div>
           </div>
           <HiimList />
         </div>
       </section>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+      {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <h3>How it’s made?</h3>
         <div className={modalStyles.videoWrapper}>
           <iframe
@@ -89,7 +81,7 @@ export default function HowItIsMade() {
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et
         </p>
-      </Modal>
+      </Modal> */}
     </>
   );
 }

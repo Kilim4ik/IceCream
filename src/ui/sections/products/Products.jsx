@@ -1,7 +1,7 @@
 import Title from "../../components/title/Title";
 import Product from "./Product";
 import styles from "./Products.module.css";
-export default function Products({ products }) {
+export default function Products({ handleModal }) {
   return (
     <section id="products" className={styles.productsSection}>
       <div className={`container ${styles.productsSectionContainer}`}>
@@ -9,6 +9,7 @@ export default function Products({ products }) {
 
         <div className={styles.productsContainer}>
           <Product
+            onClick={handleModal}
             colors={{
               card: "#AEC6A5",
               imgBG: "rgba(156, 190, 143, 0.7)",
@@ -22,6 +23,7 @@ export default function Products({ products }) {
             text="Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer"
           />
           <Product
+            onClick={handleModal}
             colors={{
               card: "#EFD478",
               imgBG: "rgba(248, 210, 78, 0.7)",
@@ -37,6 +39,7 @@ export default function Products({ products }) {
             "
           />
           <Product
+            onClick={handleModal}
             colors={{
               card: "#D6936D",
               imgBG: "rgba(213, 117, 63, 0.7)",

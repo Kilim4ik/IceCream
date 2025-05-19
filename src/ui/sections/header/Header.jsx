@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Button from "../../components/buttons/button/Buttons";
-import Modal from "../../components/modal/Modal";
+// import Modal from "../../components/modal/Modal";
 import Nav from "../nav/Nav";
 import styles from "./Header.module.css";
 import Form from "../../components/form/Form";
 import FormCard from "../../components/form/FormCard";
-export default function Header() {
+export default function Header({ handleModal }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -21,7 +21,8 @@ export default function Header() {
           />
           <Nav />
           <Button
-            onClick={() => setIsModalOpen(true)}
+            onClick={handleModal}
+            // onClick={() => setIsModalOpen(true)}
             arrow={true}
             variant="primary"
           >
@@ -29,7 +30,7 @@ export default function Header() {
           </Button>
         </div>
       </header>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+      {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <h3>Buy now</h3>
         <div
           style={{
@@ -66,7 +67,7 @@ export default function Header() {
           />
         </div>
         <Form />
-      </Modal>
+      </Modal> */}
     </>
   );
 }

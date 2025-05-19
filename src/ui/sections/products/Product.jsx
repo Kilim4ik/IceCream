@@ -1,6 +1,6 @@
 import styles from "./Products.module.css";
 import styled from "styled-components";
-export default function Product({ colors, urls, title, text }) {
+export default function Product({ onCLick, colors, urls, title, text }) {
   const Card = styled.div`
     display: grid;
     justify-items: center;
@@ -44,7 +44,7 @@ export default function Product({ colors, urls, title, text }) {
     }
   `;
   return (
-    <Card>
+    <Card onClick={onCLick}>
       <ImgWrapper>
         <span></span>
         <img className={styles.img} src={urls.photo} alt={`${title} `} />

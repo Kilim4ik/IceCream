@@ -7,6 +7,7 @@ export default function Form({
   email = false,
   comment = true,
 }) {
+  
   return (
     <form className={styles.form} action="">
       {name && <input type="text" placeholder="Name" />}
