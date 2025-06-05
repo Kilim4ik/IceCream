@@ -10,19 +10,35 @@ import { useState } from "react";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [choosenProduct, setChoosenProduct] = useState(null);
 
   const handleModal = () => {
     setIsModalOpen((prev) => !prev);
   };
 
+  const selectProduct = (elem) => {
+    setChoosenProduct(elem);
+  };
+  const resetSelectedProduct = () => {
+    setChoosenProduct(null);
+  };
   return (
     <div className="App">
       <Header handleModal={handleModal} />
       <Hero />
-      <Products handleModal={handleModal} />
+      <Products
+        selectProduct={selectProduct}
+        handleModal={handleModal}
+        data={products}
+      />
       <HowItIsMade />
-      {isModalOpen ===  true && (
-        <Modal handleModal={handleModal} data={products} />
+      {isModalOpen === true && (
+        <Modal
+          resetSelectedProduct={resetSelectedProduct}
+          handleModal={handleModal}
+          data={products}
+          product={choosenProduct}
+        />
       )}
     </div>
   );

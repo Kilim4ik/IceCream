@@ -1,5 +1,4 @@
 .form {
-  margin-top: 40px;
   display: grid;
   justify-items: center;
   gap: 16px;
@@ -9,11 +8,15 @@
     font-family: var(--font-family);
     color: var(--black);
     width: 100%;
+    max-width: 368px;
     outline-color: #f8d24e;
     padding: 11px 16px;
     border: 1px solid #84a178;
     border-radius: 10px;
     background: rgba(248, 210, 78, 0.1);
+    ::first-child() {
+      margin-top: 40px;
+    }
     &::placeholder {
       opacity: 1;
       color: var(--black);

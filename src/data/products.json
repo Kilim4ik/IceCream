@@ -3,18 +3,72 @@
     "id": 1,
     "title": "ice cream",
     "description": "Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer",
-    "image": "/Images/products/product1.png"
+    "image": "/Images/products/product1.png",
+    "info": {
+      "kcal": "210",
+      "Protein": "3.5g",
+      "Fats": "12g",
+      "Carbs": "22g"
+    },
+    "ingredients": {
+      "Milk": "100ml",
+      "Cream": "30ml",
+      "Sugar": "20g",
+      "Vanilla sugar": "5g"
+    },
+    "colors": {
+      "card": "#AEC6A5",
+      "imgBG": "rgba(156, 190, 143, 0.7)",
+      "imgShadow": "rgba(10, 136, 23, 0.25)"
+    }
   },
   {
     "id": 2,
     "title": "ice coffee",
     "description": "Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers",
-    "image": "/Images/products/product2.png"
+    "image": "/Images/products/product2.png",
+    "info": {
+      "kcal": "95",
+      "Protein": "1.2g",
+      "Fats": "3g",
+      "Carbs": "14g"
+    },
+    "ingredients": {
+      "Milk": "80ml",
+      "Cream": "0ml",
+      "Cocoa powder": "5g",
+      "Sugar": "10g"
+    },
+    "colors": {
+      "card": "#EFD478",
+      "imgBG": "rgba(248, 210, 78, 0.7)",
+      "imgShadow": "rgba(153, 114, 23, 0.25)"
+    }
   },
   {
     "id": 3,
     "title": "milkshakes",
     "description": "Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice",
-    "image": "/Images/products/product3.png"
+    "image": "/Images/products/product3.png",
+
+    "info": {
+      "kcal": "260",
+      "Protein": "4g",
+      "Fats": "10g",
+      "Carbs": "32g"
+    },
+    "ingredients": {
+      "Milk": "120ml",
+      "Belgian chocolate": "15g",
+      "Cream": "25ml",
+      "Cocoa powder": "10g",
+      "Sugar": "25g",
+      "Vanilla sugar": "5g"
+    },
+    "colors": {
+      "card": "#D6936D",
+      "imgBG": "rgba(213, 117, 63, 0.7)",
+      "imgShadow": "rgba(0, 0, 0, 0.25)"
+    }
   }
 ]

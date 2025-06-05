@@ -5,6 +5,7 @@ import Nav from "../nav/Nav";
 import styles from "./Header.module.css";
 import Form from "../../components/form/Form";
 import FormCard from "../../components/form/FormCard";
+
 export default function Header({ handleModal }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
