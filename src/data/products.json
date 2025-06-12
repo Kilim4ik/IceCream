@@ -3,7 +3,7 @@
     "id": 1,
     "title": "ice cream",
     "description": "Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer",
-    "image": "/Images/products/product1.png",
+    "image": "/images/products/product1.png",
     "info": {
       "kcal": "210",
       "Protein": "3.5g",
@@ -26,7 +26,7 @@
     "id": 2,
     "title": "ice coffee",
     "description": "Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers",
-    "image": "/Images/products/product2.png",
+    "image": "/images/products/product2.png",
     "info": {
       "kcal": "95",
       "Protein": "1.2g",
@@ -49,7 +49,7 @@
     "id": 3,
     "title": "milkshakes",
     "description": "Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice",
-    "image": "/Images/products/product3.png",
+    "image": "/images/products/product3.png",
 
     "info": {
       "kcal": "260",

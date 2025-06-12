@@ -81,7 +81,7 @@ class Modal extends Component {
           <img
             className={styles.closeBtn}
             onClick={this.handleClose}
-            src="./icons/closeBtn.svg"
+            src="/icons/closeBtn.svg"
             alt=""
           />
 

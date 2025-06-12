@@ -1,21 +1,16 @@
-import { useState } from "react";
 import Button from "../../components/buttons/button/Buttons";
-// import Modal from "../../components/modal/Modal";
+
 import Nav from "../nav/Nav";
 import styles from "./Header.module.css";
-import Form from "../../components/form/Form";
-import FormCard from "../../components/form/FormCard";
 
 export default function Header({ handleModal }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <>
       <header className={styles.header}>
         <div className={`container ${styles.content}`}>
           <img
             className={styles.logo}
-            src="./icons/logo.svg"
+            src="/icons/logo.svg"
             alt="Logo"
             width={48}
             height={44}
