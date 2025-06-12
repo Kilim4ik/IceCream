@@ -1,6 +1,6 @@
 import "./App.css";
 import "./index.css";
-import Modal from "./ui/components/modal/Modal";
+import Modal from "./ui/components/modal/Modal.jsx";
 import Header from "./ui/sections/header/Header.jsx";
 import Hero from "./ui/sections/hero/Hero.jsx";
 import HowItIsMade from "./ui/sections/how-it-is-made/HowItIsMade.jsx";
