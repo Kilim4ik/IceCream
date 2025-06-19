@@ -20,9 +20,9 @@ class Modal extends Component {
   handleClose = () => {
     this.setState({ modalShowed: false });
     setTimeout(() => {
-      this.props.handleModal();
       this.resetState();
       this.props.resetSelectedProduct();
+      this.props.setIsModalOpen(false);
     }, 300);
   };
   resetState = () => {
@@ -49,13 +49,13 @@ class Modal extends Component {
     this.setState({ isFormSubmited: true });
   };
   showModal = () => {
+    this.props.setIsModalOpen(true);
     this.setState({ modalShowed: true });
   };
   handleEscape = (e) => {
     if (e.key === "Escape") this.handleClose();
   };
   componentDidMount() {
-    this.props.handleModal();
     document.addEventListener("keydown", this.handleEscape);
     setTimeout(this.showModal, 200);
   }

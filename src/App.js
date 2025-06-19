@@ -34,6 +34,7 @@ function App() {
       <HowItIsMade />
       {isModalOpen === true && (
         <Modal
+          setIsModalOpen={setIsModalOpen}
           resetSelectedProduct={resetSelectedProduct}
           handleModal={handleModal}
           data={products}

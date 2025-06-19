@@ -77,7 +77,7 @@ export default function Product({
       >
         {description}
       </p>
-      <a href={image}>
+      <div>
         <svg
           style={{
             marginTop: 58,
@@ -88,7 +88,7 @@ export default function Product({
         >
           <use href="/icons/sprite.svg#full-arrow" />
         </svg>
-      </a>
+      </div>
     </Card>
   );
 }
