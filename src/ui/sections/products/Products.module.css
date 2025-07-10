@@ -19,3 +19,17 @@
   position: relative;
   z-index: 1;
 }
+.loading {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin: 100px 0;
+}
+.error {
+  font-size: 24px;
+  font-weight: 700;
+  color: red;
+  text-align: center;
+  margin: 100px 0;
+}

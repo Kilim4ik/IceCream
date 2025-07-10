@@ -66,7 +66,12 @@ export default function Product({
           }}
         ></span>
 
-        <img className={styles.img} src={image} alt={`${title} `} />
+        <img
+          loading="lazy"
+          className={styles.img}
+          src={image}
+          alt={`${title} `}
+        />
       </ImgWrapper>
 
       <h3 className={styles.cardTitle}>{title}</h3>

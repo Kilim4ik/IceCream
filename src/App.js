@@ -7,11 +7,12 @@ import HowItIsMade from "./ui/sections/how-it-is-made/HowItIsMade.jsx";
 import Products from "./ui/sections/products/Products.jsx";
 import products from "./data/products.json";
 import { useState } from "react";
+import { fetchProducts } from "./api/fetchProducts.js";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [choosenProduct, setChoosenProduct] = useState(null);
-
+  console.log(fetchProducts());
   const handleModal = () => {
     setIsModalOpen((prev) => !prev);
   };
@@ -34,7 +35,6 @@ function App() {
       <HowItIsMade />
       {isModalOpen === true && (
         <Modal
-          setIsModalOpen={setIsModalOpen}
           resetSelectedProduct={resetSelectedProduct}
           handleModal={handleModal}
           data={products}
