@@ -4,10 +4,10 @@ import Title from "../../components/title/Title";
 import HiimList from "./HiimList";
 import styles from "./HowItIsMade.module.css";
 import modalStyles from "./HiimModal.module.css";
-// import Modal from "../../components/modal/Modal";
+
 
 export default function HowItIsMade() {
-  // const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   return (
     <>

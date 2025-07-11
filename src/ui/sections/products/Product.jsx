@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import styles from "./Products.module.css";
 import styled from "styled-components";
+import { ModalContext } from "../../../context/modalContext";
 const Card = styled.div`
   display: grid;
   justify-items: center;
@@ -40,13 +42,13 @@ const ImgWrapper = styled.div`
   }
 `;
 export default function Product({
-  handleModal,
   colors,
   image,
   title,
   description,
   selectProduct,
 }) {
+  const { handleModal } = useContext(ModalContext);
   const handleClick = () => {
     handleModal();
     selectProduct();
