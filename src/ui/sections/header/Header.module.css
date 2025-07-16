@@ -6,3 +6,7 @@
   align-items: center;
   justify-content: space-between;
 }
+.logo {
+  position: relative;
+  z-index: 99;
+}

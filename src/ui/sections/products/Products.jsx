@@ -12,7 +12,7 @@ export default function Products({ selectProduct }) {
   }, [fetchData]);
   return (
     <section id="products" className={styles.productsSection}>
-      <div className={`container ${styles.productsSectionContainer}`}>
+      <div className={`container `}>
         <Title subTitle="100% natural" title="products" />
         {isLoading && <p className={styles.loading}>Loading...</p>}
         {errorMessage && <p className={styles.error}>{errorMessage}</p>}

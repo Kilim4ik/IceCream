@@ -14,6 +14,7 @@ const Modal = ({ product }) => {
   };
 
   const onSubmit = ({ target }) => {
+    handleClose();
     console.log({
       name: target.name.value.trim(),
       email: target.email?.trim() ? target.email.value.trim() : "",
@@ -21,7 +22,6 @@ const Modal = ({ product }) => {
       comment: target.comment?.value?.trim() ? target.comment.value.trim() : "",
       order: target.card ? target.card.value : product.title,
     });
-    handleClose();
   };
 
   useEffect(() => {

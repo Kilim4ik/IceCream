@@ -2,6 +2,7 @@ import { useContext } from "react";
 import styles from "./Products.module.css";
 import styled from "styled-components";
 import { ModalContext } from "../../../context/modalContext";
+import CardContent from "../../components/card-content/CardContent";
 const Card = styled.div`
   display: grid;
   justify-items: center;
@@ -21,6 +22,16 @@ const Card = styled.div`
     transform: translateY(-8px);
     box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.2);
   }
+  @media (max-width: 1200px) {
+    padding: 108px 26px 12px;
+  }
+  @media (max-width: 768px) {
+    max-width: 320px;
+    padding: 126px 60px 16px;
+  }
+  @media (max-width: 480px) {
+    padding: 126px 40px 16px;
+  }
 `;
 const ImgWrapper = styled.div`
   width: 302px;
@@ -39,6 +50,13 @@ const ImgWrapper = styled.div`
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 8px 30px rgba(153, 114, 23, 0.2);
+  }
+  @media (max-width: 1200px) {
+    width: 200px;
+    top: -120px;
+    span {
+      transform: translateY(12px);
+    }
   }
 `;
 export default function Product({
@@ -77,13 +95,8 @@ export default function Product({
       </ImgWrapper>
 
       <h3 className={styles.cardTitle}>{title}</h3>
-      <p
-        style={{
-          marginTop: 66,
-        }}
-      >
-        {description}
-      </p>
+      <CardContent type="dark">{description}</CardContent>
+
       <div>
         <svg
           style={{

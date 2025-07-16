@@ -9,6 +9,10 @@ const Title = styled.h1`
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--fon-color);
+
+  @media (max-width: 1200px) {
+    font-size: 26px;
+  }
 `;
 const Link = styled.a`
   padding: 12px 21px;
@@ -19,6 +23,9 @@ const Link = styled.a`
   text-decoration-skip-ink: none;
   text-align: center;
   color: #f8d24e;
+  @media (max-width: 1200px) {
+    padding: 0;
+  }
 `;
 const Quantity = styled.span`
   font-family: var(--font-family);
@@ -28,6 +35,9 @@ const Quantity = styled.span`
   text-transform: uppercase;
   text-align: right;
   color: var(--black);
+  @media (max-width: 1200px) {
+    font-size: 28px;
+  }
 `;
 export default function Hero() {
   return (

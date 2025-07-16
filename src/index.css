@@ -7,6 +7,9 @@
   --font3: "DM Sans", sans-serif;
   --fon-color: #fcfcfc;
   --black: #131313;
+
+  --desktop: 1200px;
+  --tablet: 768px;
 }
 * {
   box-sizing: border-box;
@@ -32,4 +35,16 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0 32px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
 }

@@ -11,4 +11,37 @@
 .navItem a:hover {
   color: #f8d24e;
 }
+.nav-burger-menu .nav {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-700%);
+  transition: all 0.5s linear;
+  position: relative;
+  z-index: 9;
+  .navItem a {
+    font-size: 48px;
+  }
+  .navItem a:hover {
+    color: var(--black);
+  }
+}
+.NavAnimation {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
 
+@media (max-width: 1200px) {
+  .nav-header {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-burger-menu .nav {
+    transform: translateX(-300%);
+  }
+}

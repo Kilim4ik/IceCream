@@ -44,3 +44,15 @@
   border: 2px solid #0a8817;
   color: white;
 }
+
+@media (max-width: 1200px) {
+  .button {
+    padding: 11px 26px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .button-header {
+    display: none;
+  }
+}

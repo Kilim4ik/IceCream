@@ -2,8 +2,10 @@ import styles from "./button.module.css";
 
 export default function Button({
   variant = "primary",
+  position = false,
   arrow = false,
   type = "button",
+  isBlank = false,
   link = "",
   children,
   onClick,
@@ -11,7 +13,12 @@ export default function Button({
   return (
     <>
       {link ? (
-        <a className={styles[variant]} href={link}>
+        <a
+          className={styles[variant]}
+          rel="noreferrer"
+          target={isBlank && "_blank"}
+          href={link}
+        >
           {children}
           {arrow && (
             <svg
@@ -26,7 +33,13 @@ export default function Button({
           )}
         </a>
       ) : (
-        <button onClick={onClick} type={type} className={styles[variant]}>
+        <button
+          onClick={onClick}
+          type={type}
+          className={`${styles[variant]} ${
+            position ? styles[`button-${position}`] : ""
+          }`}
+        >
           {children}
           {arrow && (
             <svg

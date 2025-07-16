@@ -1,0 +1,84 @@
+.BurgerMenuLine {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  border-radius: 16px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.5s linear;
+  position: relative;
+  z-index: 99;
+}
+.BurgerMenuLine::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background-color: #fff;
+  border-radius: 16px;
+  position: absolute;
+  top: -5px;
+  transition: all 0.5s linear;
+}
+.BurgerMenuLine::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  border-radius: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: 5px;
+  transition: all 0.5s linear;
+}
+
+.animation {
+  transform: rotate(45deg);
+}
+.animation::before {
+  transform: translateY(8px);
+  opacity: 0;
+}
+.animation::after {
+  transform: rotate(-90deg) translateX(5px);
+}
+.BurgerMenuWindowContainer {
+  padding-top: 140px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  button {
+    display: none;
+  }
+}
+.Backdrop {
+  background-color: #84a178;
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  width: 100px;
+  height: 100px;
+  transition: all 0.7s linear;
+}
+.ModalAnimation {
+  transform: scale(30);
+}
+@media (max-width: 768px) {
+  .BurgerMenuWindowContainer {
+    button {
+      display: block;
+      position: relative;
+      z-index: 9;
+      margin: 112px auto 0;
+      opacity: 0;
+      transform: translateX(-700%);
+      transition: all 0.5s linear;
+    }
+  }
+  .BurgerMenuWindowContainer:has(.ModalAnimation) button {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

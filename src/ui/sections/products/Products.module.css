@@ -11,10 +11,13 @@
   gap: 29px;
 }
 .cardTitle {
+  white-space: nowrap;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
+  margin-bottom: 66px;
 }
+
 .img {
   position: relative;
   z-index: 1;
@@ -32,4 +35,46 @@
   color: red;
   text-align: center;
   margin: 100px 0;
+}
+
+@media (max-width: 1200px) {
+  .productsSection {
+    background-image: image-set(
+      url("../../../../public/images/products/tablet/ice-creamsBG.png") 1x,
+      url("../../../../public/images/products/tablet/ice-creamsBG-@2x.png") 2x,
+      url("../../../../public/images/products/tablet/ice-creamsBG-@3x.png") 3x
+    );
+  }
+
+  .productsContainer {
+    margin-top: 200px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, minmax(224px, 1fr));
+  }
+  .cardTitle {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productsSection {
+    background-image: image-set(
+      url("../../../../public/images/products/mobile/ice-creamsBG.png") 1x,
+      url("../../../../public/images/products/mobile/ice-creamsBG-@2x.png") 2x,
+      url("../../../../public/images/products/mobile/ice-creamsBG-@3x.png") 3x
+    );
+  }
+  .productsContainer {
+    margin-top: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 168px;
+  }
+  .cardTitle {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
 }

@@ -1,7 +1,6 @@
 .heroSection {
   padding: 45px 0 332px;
-  background-image: url(../../../../public/images/hero/dotesBG.svg),
-    image-set(
+  background-image: image-set(
       url("../../../../public/images/hero/ice-creams.png") 1x,
       url("../../../../public/images/hero/ice-creams-@2x.png") 2x,
       url("../../../../public/images/hero/ice-creams-@3x.png") 3x
@@ -10,11 +9,12 @@
       url("../../../../public/images/hero/bigIceCream.png") 1x,
       url("../../../../public/images/hero/bigIceCream-@2x.png") 2x,
       url("../../../../public/images/hero/bigIceCream-@3x.png") 3x
-    );
+    ),
+    url(../../../../public/images/hero/dotesBG.svg);
   background-repeat: no-repeat;
-  background-size: 1200px auto, 225px 225px, 456px 560px;
-  background-position: bottom 0 left calc(50% + 8px),
-    bottom 65px left calc(50% - 467px), bottom 0 right calc(50% - 312px);
+  background-size: 225px 225px, 456px 560px, 1200px auto;
+  background-position: bottom 65px left calc(50% - 467px),
+    bottom 0 right calc(50% - 312px), bottom 0 left calc(50% + 8px);
 }
 .btnContainer {
   display: flex;
@@ -34,11 +34,82 @@
 }
 .quantityList {
   display: grid;
+  gap: 16px;
   justify-items: end;
   position: absolute;
   right: 0;
   top: 0;
   li {
     text-align: end;
+    display: grid;
+    gap: 4px;
+  }
+}
+@media (max-width: 1200px) {
+  .heroSection {
+    padding: 14px 0 183px;
+    background-image: image-set(
+        url("../../../../public/images/hero/ice-creams.png") 1x,
+        url("../../../../public/images/hero/ice-creams-@2x.png") 2x,
+        url("../../../../public/images/hero/ice-creams-@3x.png") 3x
+      ),
+      image-set(
+        url("../../../../public/images/hero/tablet/bigIceCream.png") 1x,
+        url("../../../../public/images/hero/tablet/bigIceCream-@2x.png") 2x,
+        url("../../../../public/images/hero/tablet/bigIceCream-@3x.png") 3x
+      ),
+      url(../../../../public/images/hero/tablet/dotesBG.svg);
+    background-repeat: no-repeat;
+    background-size: 152px 152px, 268px 329px, 100% auto;
+    background-position: bottom 3% left 6%, bottom 0 right 10%,
+      bottom 0 left 55%;
+  }
+  .heroContent {
+    gap: 29px;
+    bottom: -160px;
+    left: 220px;
+  }
+  .quantityList {
+    right: 32px;
+    gap: 20px;
+    li {
+      p {
+        font-size: 8px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 40px 0 150px;
+    background-image: image-set(
+        url("../../../../public/images/hero/bigIceCream.png") 1x,
+        url("../../../../public/images/hero/bigIceCream-@2x.png") 2x,
+        url("../../../../public/images/hero/bigIceCream-@3x.png") 3x
+      ),
+      url(../../../../public/images/hero/tablet/dotesBG.svg);
+    background-repeat: no-repeat;
+    background-size: 218px 267px, 100% auto;
+    background-position: bottom 0 right 10%, bottom 0 left 55%;
+  }
+  .heroContent {
+    display: none;
+  }
+  .quantityList {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 50px 0 236px;
+    background-image: image-set(
+        url("../../../../public/images/hero/bigIceCream.png") 1x,
+        url("../../../../public/images/hero/bigIceCream-@2x.png") 2x,
+        url("../../../../public/images/hero/bigIceCream-@3x.png") 3x
+      ),
+      url(../../../../public/images/hero/mobile/dotesBG.svg);
+    background-repeat: no-repeat;
+    background-size: 177px 217px, 100% auto;
+    background-position: bottom 0 left 46%, bottom 0 left 55%;
   }
 }

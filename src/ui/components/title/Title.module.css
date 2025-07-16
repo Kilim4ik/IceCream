@@ -20,3 +20,21 @@
   text-transform: uppercase;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .subTitle {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+  }
+}

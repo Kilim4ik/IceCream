@@ -1,0 +1,30 @@
+.cardContent {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: center;
+}
+.dark {
+  composes: cardContent;
+  color: var(--black);
+}
+
+.shadow {
+  composes: cardContent;
+  color: #ababab;
+}
+.accent {
+  composes: cardContent;
+  color: #d6936d;
+}
+@media (max-width: 1200px) {
+  .cardContent {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .cardContent {
+    font-size: 12px;
+  }
+}

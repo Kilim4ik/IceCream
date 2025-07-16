@@ -1,18 +1,14 @@
-import { useState } from "react";
+
 import Button from "../../components/buttons/button/Buttons";
 import Title from "../../components/title/Title";
 import HiimList from "./HiimList";
 import styles from "./HowItIsMade.module.css";
-import modalStyles from "./HiimModal.module.css";
-
 
 export default function HowItIsMade() {
-
-
   return (
     <>
       <section id="how-it’s-made" className={styles.section}>
-        <div className="container">
+        <div className={`container`}>
           <Title
             subTitle="tradition and love"
             title="how it’s made?"
