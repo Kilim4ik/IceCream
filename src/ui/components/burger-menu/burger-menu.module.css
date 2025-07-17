@@ -1,3 +1,6 @@
+.button {
+  display: none;
+}
 .BurgerMenuLine {
   display: block;
   width: 24px;
@@ -64,6 +67,11 @@
 }
 .ModalAnimation {
   transform: scale(30);
+}
+@media (max-width: 1200px) {
+  .button {
+    display: block;
+  }
 }
 @media (max-width: 768px) {
   .BurgerMenuWindowContainer {

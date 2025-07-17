@@ -11,6 +11,7 @@ export default function BurgerMenu() {
         border: "none",
       }}
       onClick={handleBurger}
+      className={styles.button}
     >
       <span
         className={`${styles.BurgerMenuLine} ${
